@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.appCoordinator = AppCoordinator(window: window)
         appCoordinator?.start()
-        
         return true
     }
 }
+
