@@ -1,0 +1,6 @@
+framework module Pods_DesafioInfoGlobo_DesafioInfoGloboUITests {
+  umbrella header "Pods-DesafioInfoGlobo-DesafioInfoGloboUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
