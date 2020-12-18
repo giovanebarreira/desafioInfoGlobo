@@ -7,14 +7,18 @@
 
 import Foundation
 
-protocol HomeSceneViewModelInputProtocol: class {
+protocol HomeSceneCoordinatorDelegate: class {
+    func showDetailedNews(newsSelected: Content)
+}
 
+protocol HomeSceneViewModelInputProtocol: class {
     func getContent()
-    func selectNews(viewData: HomeSceneViewDataType)
+    func didSelectNews(newsSelected: HomeSceneViewDataItemType)
 }
 
 protocol HomeSceneViewModelOutputProtocol: class {
     func displayAllNews(newsList: HomeSceneViewDataType)
+    func displayWarning()
 }
 
 class HomeSceneViewModel {
@@ -22,32 +26,34 @@ class HomeSceneViewModel {
     //MARK: - Properties
     weak var output: HomeSceneViewModelOutputProtocol?
     private var service: HomeSceneServiceProtocol
-    private var contentModel: HomeSceneModel?
+    private weak var coordinatorDelegate: HomeSceneCoordinatorDelegate?
     
-    init(service: HomeSceneServiceProtocol) {
+    init(service: HomeSceneServiceProtocol,
+         coordinatorDelegate: HomeSceneCoordinatorDelegate? = nil) {
         self.service = service
+        self.coordinatorDelegate = coordinatorDelegate
     }
 }
 
 extension HomeSceneViewModel: HomeSceneViewModelInputProtocol {
+    
+    func didSelectNews(newsSelected: HomeSceneViewDataItemType) {
+        guard let convertToContent = (newsSelected as? HomeSceneViewDataItem)?.model else { return }
+        coordinatorDelegate?.showDetailedNews(newsSelected: convertToContent)
+    }
+    
     func getContent() {
         service.fetchList { [weak self] newsContent in
             if let content = newsContent.first {
-                self?.contentModel = content
-            
+    
                 let contentList: [Content] = content.content ?? []
                 let newsList = HomeSceneViewData(model: contentList)
-    
                 self?.output?.displayAllNews(newsList: newsList)
-            
+                
             }
         } failure: { error in
+            self.output?.displayWarning()
             print(error.localizedDescription)
         }
-
-    }
-    
-    func selectNews(viewData: HomeSceneViewDataType) {
-        
     }
 }

@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 class HomeSceneViewController: UIViewController {
     
     //MARK: - Outlets
@@ -24,16 +25,18 @@ class HomeSceneViewController: UIViewController {
     //MARK: - Constants
     private let cellIdentifier = "cell"
     
-    
+    //MARK: - Constructors
     init(viewModel: HomeSceneViewModelInputProtocol) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
+        self.title = "O Globo"
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
+    //MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         viewModel.getContent()
@@ -45,13 +48,16 @@ class HomeSceneViewController: UIViewController {
         self.homeTableView.register(UINib(nibName: nibName, bundle: nil), forCellReuseIdentifier: cellIdentifier)
         homeTableView.dataSource = self
         homeTableView.delegate = self
-    
     }
 }
 
 extension HomeSceneViewController: HomeSceneViewModelOutputProtocol {
     func displayAllNews(newsList: HomeSceneViewDataType) {
         newsViewData = newsList
+    }
+    
+    func displayWarning() {
+        WarningView.showWarning(viewController: self)
     }
 }
 
@@ -66,5 +72,12 @@ extension HomeSceneViewController: UITableViewDataSource, UITableViewDelegate {
         let viewData = newsViewData?.contentList[indexPath.row]
         cell?.setup(viewData: viewData)
         return cell ?? UITableViewCell()
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let selectedNews = newsViewData?.contentList[indexPath.row] {
+            viewModel.didSelectNews(newsSelected: selectedNews)
+        }
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
