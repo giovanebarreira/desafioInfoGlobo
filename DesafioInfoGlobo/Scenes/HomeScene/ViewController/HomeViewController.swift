@@ -14,8 +14,8 @@ class HomeSceneViewController: UIViewController {
     @IBOutlet weak var homeTableView: UITableView!
     
     //MARK: - Properties
-    private let viewModel: HomeSceneViewModelInputProtocol
-    private var newsViewData: HomeSceneViewDataType? {
+    private(set) var viewModel: HomeSceneViewModelInputProtocol
+    private(set) var newsViewData: HomeSceneViewDataType? {
         didSet{
             DispatchQueue.main.async {
                 self.homeTableView.reloadData()
