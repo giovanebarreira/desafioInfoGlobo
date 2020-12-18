@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		04B4B8EC14E76DCF5BD05028 /* Pods_DesafioInfoGlobo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2BA79590C44893351DCE4F6 /* Pods_DesafioInfoGlobo.framework */; };
-		08440212BF60B73EFD66258D /* Pods_DesafioInfoGlobo_DesafioInfoGloboUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01E26DD10CA2FAAD58D3BFD8 /* Pods_DesafioInfoGlobo_DesafioInfoGloboUITests.framework */; };
-		2E77681900E8BA6A2CE86460 /* Pods_DesafioInfoGloboTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 827AAFF60A837A98A070FB8B /* Pods_DesafioInfoGloboTests.framework */; };
 		AE1E5953258CE2FD00166E46 /* AppCoordinator+HomeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1E5950258CE2FD00166E46 /* AppCoordinator+HomeScene.swift */; };
 		AE1E5954258CE2FD00166E46 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1E5951258CE2FD00166E46 /* AppCoordinator.swift */; };
 		AE1E5955258CE2FD00166E46 /* AppCoordinator+NewsDetailedScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1E5952258CE2FD00166E46 /* AppCoordinator+NewsDetailedScene.swift */; };
@@ -33,18 +31,11 @@
 		AE1E5998258CE33000166E46 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1E598A258CE33000166E46 /* HomeViewController.swift */; };
 		AE1E5999258CE33000166E46 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1E598C258CE33000166E46 /* HomeTableViewCell.swift */; };
 		AE1E599A258CE33000166E46 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE1E598D258CE33000166E46 /* HomeTableViewCell.xib */; };
-		AE7FC265258500E300D3D13F /* DesafioInfoGloboTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7FC264258500E300D3D13F /* DesafioInfoGloboTests.swift */; };
+		AEEB885E258CE59600C1ACAA /* HomeSceneServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEB885D258CE59600C1ACAA /* HomeSceneServiceTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		AE7FC261258500E300D3D13F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AE7FC242258500E200D3D13F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AE7FC249258500E200D3D13F;
-			remoteInfo = DesafioInfoGlobo;
-		};
-		AE7FC26C258500E300D3D13F /* PBXContainerItemProxy */ = {
+		AE1E59DE258CE54500166E46 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AE7FC242258500E200D3D13F /* Project object */;
 			proxyType = 1;
@@ -83,11 +74,10 @@
 		AE1E598A258CE33000166E46 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		AE1E598C258CE33000166E46 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		AE1E598D258CE33000166E46 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		AE1E59D9258CE54500166E46 /* DesafioInfoGloboTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesafioInfoGloboTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE1E59DD258CE54500166E46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE7FC24A258500E200D3D13F /* DesafioInfoGlobo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesafioInfoGlobo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE7FC260258500E300D3D13F /* DesafioInfoGloboTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesafioInfoGloboTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE7FC264258500E300D3D13F /* DesafioInfoGloboTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesafioInfoGloboTests.swift; sourceTree = "<group>"; };
-		AE7FC266258500E300D3D13F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AE7FC26B258500E300D3D13F /* DesafioInfoGloboUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesafioInfoGloboUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEEB885D258CE59600C1ACAA /* HomeSceneServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSceneServiceTest.swift; sourceTree = "<group>"; };
 		B2BA79590C44893351DCE4F6 /* Pods_DesafioInfoGlobo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesafioInfoGlobo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3C1D62610942D861698AAD5 /* Pods-DesafioInfoGloboTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioInfoGloboTests.release.xcconfig"; path = "Target Support Files/Pods-DesafioInfoGloboTests/Pods-DesafioInfoGloboTests.release.xcconfig"; sourceTree = "<group>"; };
 		E48C0248BF4E77680892AB0C /* Pods-DesafioInfoGlobo-DesafioInfoGloboUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioInfoGlobo-DesafioInfoGloboUITests.debug.xcconfig"; path = "Target Support Files/Pods-DesafioInfoGlobo-DesafioInfoGloboUITests/Pods-DesafioInfoGlobo-DesafioInfoGloboUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -95,27 +85,18 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		AE1E59D6258CE54500166E46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AE7FC247258500E200D3D13F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				04B4B8EC14E76DCF5BD05028 /* Pods_DesafioInfoGlobo.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AE7FC25D258500E300D3D13F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2E77681900E8BA6A2CE86460 /* Pods_DesafioInfoGloboTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AE7FC268258500E300D3D13F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				08440212BF60B73EFD66258D /* Pods_DesafioInfoGlobo_DesafioInfoGloboUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,7 +142,6 @@
 				AE1E5967258CE32100166E46 /* LaunchScreen.storyboard */,
 				AE1E5968258CE32100166E46 /* Assets.xcassets */,
 				AE1E5969258CE32100166E46 /* AppDelegate.swift */,
-				AE1E596A258CE32100166E46 /* RequestMock.json */,
 				AE1E596B258CE32100166E46 /* Info.plist */,
 			);
 			path = Resources;
@@ -283,11 +263,20 @@
 			path = Subviews;
 			sourceTree = "<group>";
 		};
+		AE1E59DA258CE54500166E46 /* DesafioInfoGloboTests */ = {
+			isa = PBXGroup;
+			children = (
+				AEEB885B258CE58000C1ACAA /* HomeScene */,
+				AE1E59DD258CE54500166E46 /* Info.plist */,
+			);
+			path = DesafioInfoGloboTests;
+			sourceTree = "<group>";
+		};
 		AE7FC241258500E200D3D13F = {
 			isa = PBXGroup;
 			children = (
 				AE7FC24C258500E200D3D13F /* DesafioInfoGlobo */,
-				AE7FC263258500E300D3D13F /* DesafioInfoGloboTests */,
+				AE1E59DA258CE54500166E46 /* DesafioInfoGloboTests */,
 				AE7FC24B258500E200D3D13F /* Products */,
 				87ABC4282565FF55E8E55DEF /* Pods */,
 				FDAEBAF9DB8A59ECE82BF682 /* Frameworks */,
@@ -298,8 +287,7 @@
 			isa = PBXGroup;
 			children = (
 				AE7FC24A258500E200D3D13F /* DesafioInfoGlobo.app */,
-				AE7FC260258500E300D3D13F /* DesafioInfoGloboTests.xctest */,
-				AE7FC26B258500E300D3D13F /* DesafioInfoGloboUITests.xctest */,
+				AE1E59D9258CE54500166E46 /* DesafioInfoGloboTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -307,21 +295,29 @@
 		AE7FC24C258500E200D3D13F /* DesafioInfoGlobo */ = {
 			isa = PBXGroup;
 			children = (
-				AE1E5974258CE33000166E46 /* Scenes */,
 				AE1E5966258CE32100166E46 /* Resources */,
 				AE1E595C258CE30E00166E46 /* Core */,
 				AE1E594F258CE2FD00166E46 /* Coordinator */,
+				AE1E5974258CE33000166E46 /* Scenes */,
 			);
 			path = DesafioInfoGlobo;
 			sourceTree = "<group>";
 		};
-		AE7FC263258500E300D3D13F /* DesafioInfoGloboTests */ = {
+		AEEB885B258CE58000C1ACAA /* HomeScene */ = {
 			isa = PBXGroup;
 			children = (
-				AE7FC264258500E300D3D13F /* DesafioInfoGloboTests.swift */,
-				AE7FC266258500E300D3D13F /* Info.plist */,
+				AEEB885C258CE58500C1ACAA /* Service */,
 			);
-			path = DesafioInfoGloboTests;
+			path = HomeScene;
+			sourceTree = "<group>";
+		};
+		AEEB885C258CE58500C1ACAA /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				AE1E596A258CE32100166E46 /* RequestMock.json */,
+				AEEB885D258CE59600C1ACAA /* HomeSceneServiceTest.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		FDAEBAF9DB8A59ECE82BF682 /* Frameworks */ = {
@@ -337,6 +333,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		AE1E59D8258CE54500166E46 /* DesafioInfoGloboTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE1E59E0258CE54500166E46 /* Build configuration list for PBXNativeTarget "DesafioInfoGloboTests" */;
+			buildPhases = (
+				AE1E59D5258CE54500166E46 /* Sources */,
+				AE1E59D6258CE54500166E46 /* Frameworks */,
+				AE1E59D7258CE54500166E46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE1E59DF258CE54500166E46 /* PBXTargetDependency */,
+			);
+			name = DesafioInfoGloboTests;
+			productName = DesafioInfoGloboTests;
+			productReference = AE1E59D9258CE54500166E46 /* DesafioInfoGloboTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		AE7FC249258500E200D3D13F /* DesafioInfoGlobo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE7FC274258500E300D3D13F /* Build configuration list for PBXNativeTarget "DesafioInfoGlobo" */;
@@ -356,45 +370,6 @@
 			productReference = AE7FC24A258500E200D3D13F /* DesafioInfoGlobo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		AE7FC25F258500E300D3D13F /* DesafioInfoGloboTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AE7FC277258500E300D3D13F /* Build configuration list for PBXNativeTarget "DesafioInfoGloboTests" */;
-			buildPhases = (
-				D81FA186C73B774D798E319D /* [CP] Check Pods Manifest.lock */,
-				AE7FC25C258500E300D3D13F /* Sources */,
-				AE7FC25D258500E300D3D13F /* Frameworks */,
-				AE7FC25E258500E300D3D13F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AE7FC262258500E300D3D13F /* PBXTargetDependency */,
-			);
-			name = DesafioInfoGloboTests;
-			productName = DesafioInfoGloboTests;
-			productReference = AE7FC260258500E300D3D13F /* DesafioInfoGloboTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		AE7FC26A258500E300D3D13F /* DesafioInfoGloboUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AE7FC27A258500E300D3D13F /* Build configuration list for PBXNativeTarget "DesafioInfoGloboUITests" */;
-			buildPhases = (
-				DAB0012B3106B20B8504C8D5 /* [CP] Check Pods Manifest.lock */,
-				AE7FC267258500E300D3D13F /* Sources */,
-				AE7FC268258500E300D3D13F /* Frameworks */,
-				AE7FC269258500E300D3D13F /* Resources */,
-				D1C132774787EEBE44865321 /* [CP] Embed Pods Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AE7FC26D258500E300D3D13F /* PBXTargetDependency */,
-			);
-			name = DesafioInfoGloboUITests;
-			productName = DesafioInfoGloboUITests;
-			productReference = AE7FC26B258500E300D3D13F /* DesafioInfoGloboUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -404,16 +379,13 @@
 				LastSwiftUpdateCheck = 1220;
 				LastUpgradeCheck = 1220;
 				TargetAttributes = {
+					AE1E59D8258CE54500166E46 = {
+						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
+						TestTargetID = AE7FC249258500E200D3D13F;
+					};
 					AE7FC249258500E200D3D13F = {
 						CreatedOnToolsVersion = 12.2;
-					};
-					AE7FC25F258500E300D3D13F = {
-						CreatedOnToolsVersion = 12.2;
-						TestTargetID = AE7FC249258500E200D3D13F;
-					};
-					AE7FC26A258500E300D3D13F = {
-						CreatedOnToolsVersion = 12.2;
-						TestTargetID = AE7FC249258500E200D3D13F;
 					};
 				};
 			};
@@ -431,13 +403,19 @@
 			projectRoot = "";
 			targets = (
 				AE7FC249258500E200D3D13F /* DesafioInfoGlobo */,
-				AE7FC25F258500E300D3D13F /* DesafioInfoGloboTests */,
-				AE7FC26A258500E300D3D13F /* DesafioInfoGloboUITests */,
+				AE1E59D8258CE54500166E46 /* DesafioInfoGloboTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		AE1E59D7258CE54500166E46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AE7FC248258500E200D3D13F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -448,20 +426,6 @@
 				AE1E5991258CE33000166E46 /* NewsDetailedSceneViewController.xib in Resources */,
 				AE1E596C258CE32200166E46 /* LaunchScreen.storyboard in Resources */,
 				AE1E596F258CE32200166E46 /* RequestMock.json in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AE7FC25E258500E300D3D13F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AE7FC269258500E300D3D13F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,70 +471,17 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D1C132774787EEBE44865321 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DesafioInfoGlobo-DesafioInfoGloboUITests/Pods-DesafioInfoGlobo-DesafioInfoGloboUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DesafioInfoGlobo-DesafioInfoGloboUITests/Pods-DesafioInfoGlobo-DesafioInfoGloboUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DesafioInfoGlobo-DesafioInfoGloboUITests/Pods-DesafioInfoGlobo-DesafioInfoGloboUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D81FA186C73B774D798E319D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-DesafioInfoGloboTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DAB0012B3106B20B8504C8D5 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-DesafioInfoGlobo-DesafioInfoGloboUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		AE1E59D5258CE54500166E46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEEB885E258CE59600C1ACAA /* HomeSceneServiceTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AE7FC246258500E200D3D13F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -595,37 +506,60 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AE7FC25C258500E300D3D13F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AE7FC265258500E300D3D13F /* DesafioInfoGloboTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AE7FC267258500E300D3D13F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		AE7FC262258500E300D3D13F /* PBXTargetDependency */ = {
+		AE1E59DF258CE54500166E46 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = AE7FC249258500E200D3D13F /* DesafioInfoGlobo */;
-			targetProxy = AE7FC261258500E300D3D13F /* PBXContainerItemProxy */;
-		};
-		AE7FC26D258500E300D3D13F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AE7FC249258500E200D3D13F /* DesafioInfoGlobo */;
-			targetProxy = AE7FC26C258500E300D3D13F /* PBXContainerItemProxy */;
+			targetProxy = AE1E59DE258CE54500166E46 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		AE1E59E1258CE54500166E46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KNQUVW98YZ;
+				INFOPLIST_FILE = DesafioInfoGloboTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.br.DesafioInfoGloboTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DesafioInfoGlobo.app/DesafioInfoGlobo";
+			};
+			name = Debug;
+		};
+		AE1E59E2258CE54500166E46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KNQUVW98YZ;
+				INFOPLIST_FILE = DesafioInfoGloboTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.br.DesafioInfoGloboTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DesafioInfoGlobo.app/DesafioInfoGlobo";
+			};
+			name = Release;
+		};
 		AE7FC272258500E300D3D13F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -782,97 +716,18 @@
 			};
 			name = Release;
 		};
-		AE7FC278258500E300D3D13F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5369B2A950E4242874CAF811 /* Pods-DesafioInfoGloboTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KNQUVW98YZ;
-				INFOPLIST_FILE = DesafioInfoGloboTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.br.DesafioInfoGloboTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DesafioInfoGlobo.app/DesafioInfoGlobo";
-			};
-			name = Debug;
-		};
-		AE7FC279258500E300D3D13F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C3C1D62610942D861698AAD5 /* Pods-DesafioInfoGloboTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KNQUVW98YZ;
-				INFOPLIST_FILE = DesafioInfoGloboTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.br.DesafioInfoGloboTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DesafioInfoGlobo.app/DesafioInfoGlobo";
-			};
-			name = Release;
-		};
-		AE7FC27B258500E300D3D13F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E48C0248BF4E77680892AB0C /* Pods-DesafioInfoGlobo-DesafioInfoGloboUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KNQUVW98YZ;
-				INFOPLIST_FILE = DesafioInfoGloboUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.br.DesafioInfoGloboUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = DesafioInfoGlobo;
-			};
-			name = Debug;
-		};
-		AE7FC27C258500E300D3D13F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A1AA7234101B2DD7C95855D7 /* Pods-DesafioInfoGlobo-DesafioInfoGloboUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KNQUVW98YZ;
-				INFOPLIST_FILE = DesafioInfoGloboUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.br.DesafioInfoGloboUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = DesafioInfoGlobo;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		AE1E59E0258CE54500166E46 /* Build configuration list for PBXNativeTarget "DesafioInfoGloboTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE1E59E1258CE54500166E46 /* Debug */,
+				AE1E59E2258CE54500166E46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		AE7FC245258500E200D3D13F /* Build configuration list for PBXProject "DesafioInfoGlobo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -887,24 +742,6 @@
 			buildConfigurations = (
 				AE7FC275258500E300D3D13F /* Debug */,
 				AE7FC276258500E300D3D13F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AE7FC277258500E300D3D13F /* Build configuration list for PBXNativeTarget "DesafioInfoGloboTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AE7FC278258500E300D3D13F /* Debug */,
-				AE7FC279258500E300D3D13F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AE7FC27A258500E300D3D13F /* Build configuration list for PBXNativeTarget "DesafioInfoGloboUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AE7FC27B258500E300D3D13F /* Debug */,
-				AE7FC27C258500E300D3D13F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

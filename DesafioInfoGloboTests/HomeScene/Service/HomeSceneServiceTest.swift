@@ -1,14 +1,13 @@
 //
-//  DesafioInfoGloboTests.swift
+//  HomeSceneServiceTest.swift
 //  DesafioInfoGloboTests
 //
-//  Created by Giovane Barreira on 12/12/20.
+//  Created by Giovane Barreira on 12/18/20.
 //
 
 import XCTest
-@testable import DesafioInfoGlobo
 
-class DesafioInfoGloboTests: XCTestCase {
+class HomeSceneServiceTest: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
