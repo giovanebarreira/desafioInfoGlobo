@@ -20,7 +20,7 @@ class NewsDetailedSceneViewController: UIViewController {
     
     //MARK: - Properties
     private var viewModel: NewsDetailedSceneViewModelInput
-    private var detailedNewsViewData: NewsDetailedSceneItemType?
+    private(set) var detailedNewsViewData: NewsDetailedSceneItemType?
     
     //MARK: Constructors
     init(viewModel: NewsDetailedSceneViewModelInput) {

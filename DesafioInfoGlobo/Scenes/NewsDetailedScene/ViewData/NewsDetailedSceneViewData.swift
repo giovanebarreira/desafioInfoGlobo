@@ -42,7 +42,7 @@ struct NewsDetailedSceneViewData {
     
    private func textOverImage(drawText text: String, inImage image: UIImage, atPoint point: CGPoint) -> UIImage {
         let textColor = UIColor.white
-        let textFont = UIFont(name: "Helvetica Bold", size: 24)!
+        let textFont = UIFont(name: "Helvetica Bold", size: 24) ?? UIFont()
 
         let scale = UIScreen.main.scale
         UIGraphicsBeginImageContextWithOptions(image.size, false, scale)
@@ -65,7 +65,7 @@ struct NewsDetailedSceneViewData {
         let newImage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
 
-        return newImage!
+        return newImage ?? UIImage()
    }
     
     func displayImageWithText(imageURL: String) -> UIImage {
@@ -81,6 +81,21 @@ struct NewsDetailedSceneViewData {
                                                          y: imageYPoint))
         return imageWithText
     }
+    
+    public func convertDateFormatter(date: String) -> String {
+
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+            dateFormatter.timeZone = NSTimeZone(name: "UTC") as TimeZone?
+        dateFormatter.locale = Locale(identifier: "pt_BR")
+        let convertedDate = dateFormatter.date(from: date) ?? Date()
+
+        dateFormatter.dateFormat = "dd/MM/yy HH:mm"
+            dateFormatter.timeZone = NSTimeZone(name: "UTC") as TimeZone?
+        let timeStamp = dateFormatter.string(from: convertedDate)
+        return timeStamp
+        }
+    
 }
 
 extension NewsDetailedSceneViewData: NewsDetailedSceneItemType {
@@ -103,10 +118,7 @@ extension NewsDetailedSceneViewData: NewsDetailedSceneItemType {
     
     var publishedIn: String {
         guard let modelDate = model.publishedIn else { return "" }
-        let formatter = DateFormatter()
-        let convertToDate = formatter.date(from: modelDate) ?? Date()
-        formatter.dateFormat = "dd/mm/yy HH:mm"
-        return formatter.string(from: convertToDate)
+        return convertDateFormatter(date: modelDate)
     }
     
     var image: UIImage {

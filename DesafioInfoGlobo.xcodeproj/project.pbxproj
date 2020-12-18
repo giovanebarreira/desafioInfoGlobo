@@ -33,6 +33,9 @@
 		AE1E599A258CE33000166E46 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE1E598D258CE33000166E46 /* HomeTableViewCell.xib */; };
 		AE677D5C258D197600A5F551 /* HomeSceneViewControllertest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE677D5B258D197600A5F551 /* HomeSceneViewControllertest.swift */; };
 		AE677D60258D2C6700A5F551 /* HomeSceneTableViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE677D5F258D2C6700A5F551 /* HomeSceneTableViewSpy.swift */; };
+		AE677D6B258D328F00A5F551 /* NewsDetailedSceneViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE677D6A258D328F00A5F551 /* NewsDetailedSceneViewModelTest.swift */; };
+		AE677D71258D33DC00A5F551 /* NewsDetailedViewModelProtocolSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE677D70258D33DC00A5F551 /* NewsDetailedViewModelProtocolSpy.swift */; };
+		AE677D75258D353000A5F551 /* NewsDetailedSceneViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE677D74258D353000A5F551 /* NewsDetailedSceneViewControllerTest.swift */; };
 		AEEB886B258CEF1000C1ACAA /* HomeSceneServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEB886A258CEF1000C1ACAA /* HomeSceneServiceMock.swift */; };
 		AEEB8878258CF94000C1ACAA /* HomeSceneViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEB8877258CF94000C1ACAA /* HomeSceneViewModelTest.swift */; };
 		AEEB887C258CFC4900C1ACAA /* HomeSceneViewModelProtocolSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEB887B258CFC4900C1ACAA /* HomeSceneViewModelProtocolSpy.swift */; };
@@ -82,6 +85,9 @@
 		AE1E59DD258CE54500166E46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE677D5B258D197600A5F551 /* HomeSceneViewControllertest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSceneViewControllertest.swift; sourceTree = "<group>"; };
 		AE677D5F258D2C6700A5F551 /* HomeSceneTableViewSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSceneTableViewSpy.swift; sourceTree = "<group>"; };
+		AE677D6A258D328F00A5F551 /* NewsDetailedSceneViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailedSceneViewModelTest.swift; sourceTree = "<group>"; };
+		AE677D70258D33DC00A5F551 /* NewsDetailedViewModelProtocolSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailedViewModelProtocolSpy.swift; sourceTree = "<group>"; };
+		AE677D74258D353000A5F551 /* NewsDetailedSceneViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailedSceneViewControllerTest.swift; sourceTree = "<group>"; };
 		AE7FC24A258500E200D3D13F /* DesafioInfoGlobo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesafioInfoGlobo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEEB886A258CEF1000C1ACAA /* HomeSceneServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSceneServiceMock.swift; sourceTree = "<group>"; };
 		AEEB8877258CF94000C1ACAA /* HomeSceneViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSceneViewModelTest.swift; sourceTree = "<group>"; };
@@ -127,8 +133,8 @@
 		AE1E594F258CE2FD00166E46 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
-				AE1E5950258CE2FD00166E46 /* AppCoordinator+HomeScene.swift */,
 				AE1E5951258CE2FD00166E46 /* AppCoordinator.swift */,
+				AE1E5950258CE2FD00166E46 /* AppCoordinator+HomeScene.swift */,
 				AE1E5952258CE2FD00166E46 /* AppCoordinator+NewsDetailedScene.swift */,
 			);
 			path = Coordinator;
@@ -274,6 +280,7 @@
 		AE1E59DA258CE54500166E46 /* DesafioInfoGloboTests */ = {
 			isa = PBXGroup;
 			children = (
+				AE677D67258D324B00A5F551 /* NewsDetailedScene */,
 				AEEB885B258CE58000C1ACAA /* HomeScene */,
 				AE1E59DD258CE54500166E46 /* Info.plist */,
 			);
@@ -287,6 +294,32 @@
 				AE677D5F258D2C6700A5F551 /* HomeSceneTableViewSpy.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		AE677D67258D324B00A5F551 /* NewsDetailedScene */ = {
+			isa = PBXGroup;
+			children = (
+				AE677D69258D326B00A5F551 /* ViewModel */,
+				AE677D68258D326000A5F551 /* ViewController */,
+			);
+			path = NewsDetailedScene;
+			sourceTree = "<group>";
+		};
+		AE677D68258D326000A5F551 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AE677D74258D353000A5F551 /* NewsDetailedSceneViewControllerTest.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		AE677D69258D326B00A5F551 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AE677D6A258D328F00A5F551 /* NewsDetailedSceneViewModelTest.swift */,
+				AE677D70258D33DC00A5F551 /* NewsDetailedViewModelProtocolSpy.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		AE7FC241258500E200D3D13F = {
@@ -516,8 +549,11 @@
 			files = (
 				AE677D60258D2C6700A5F551 /* HomeSceneTableViewSpy.swift in Sources */,
 				AEEB8878258CF94000C1ACAA /* HomeSceneViewModelTest.swift in Sources */,
+				AE677D75258D353000A5F551 /* NewsDetailedSceneViewControllerTest.swift in Sources */,
+				AE677D71258D33DC00A5F551 /* NewsDetailedViewModelProtocolSpy.swift in Sources */,
 				AEEB887C258CFC4900C1ACAA /* HomeSceneViewModelProtocolSpy.swift in Sources */,
 				AE677D5C258D197600A5F551 /* HomeSceneViewControllertest.swift in Sources */,
+				AE677D6B258D328F00A5F551 /* NewsDetailedSceneViewModelTest.swift in Sources */,
 				AEEB886B258CEF1000C1ACAA /* HomeSceneServiceMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
